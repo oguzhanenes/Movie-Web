@@ -46,7 +46,7 @@ const LogoContainer = styled.div`
   align-items: center;
   
 `;
-/*Menü bağlantıları. Stilin yanı sıra, mobil görünümde margin ayarlarını yapar. */
+/*mobil görünümde margin ayarlarını yapar. */
 const MenuItem = styled(Link)`
   color: #F9DBBA;
   text-decoration: none;
@@ -59,7 +59,7 @@ const MenuItem = styled(Link)`
   }
 `;
 
-/* Yan menü bileşeni. isOpen prop'u ile menünün açık mı kapalı mı olduğunu kontrol eder. Ekranın sol tarafında sabitlenmiş olarak görünür ve mobil görünümde gösterilir.*/
+/* Yan menü bileşeni. isOpen prop'u ile menünün açık mı kapalı mı olduğunu kontrol eder.*/
 const Sidebar = styled.div<{ isOpen: boolean }>`
   position: fixed;
   top: 0;
@@ -117,7 +117,7 @@ const Button = styled(Link)`
     }
   }
 `;
-/*iconundaki menüyü açıp kapatmak için kullanılır */
+/*icondaki menüyü açıp kapatmak için kullanılır */
 const MenuToggle = styled.div`
   display: block;
   font-size: 1.5rem;
@@ -141,7 +141,7 @@ const DesktopButtons = styled.div`
     z-index: 2; 
   }
 `;
-/* usestate :Yan menünün açık veya kapalı olduğunu takip eden durum (state) yönetimi sağlar. */
+/* usestate :Yan menünün açık veya kapalı olduğunu takip eden state yönetimi sağlar. */
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   //başlangıçta false olarak ayarlanır çünkü menü kapalıdır.
