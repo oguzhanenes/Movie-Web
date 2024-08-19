@@ -89,7 +89,7 @@ const SimpleSlider: React.FC = () => {
   };
 
 
-  return (//slider olultururken settins elemanlarını alıp datadaki elemanlar için birer slider oluşturulur.Slide değişkeni dizideki gerçek elemanları temsil eder. index de map fonksiyonun her bir döngüdeki sırasını belirtir.Reactta döngüler ve listelerle oluşturulan bileşenlerin bir keyi olması gerektiği için key değerine indexi verdim
+  return (
     <Slider {...settings}>
       {sliderData.map((slide, index) => (
         <Slide key={index}>
